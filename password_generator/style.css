@@ -1,0 +1,136 @@
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #03001C;
+    /*background-color: #16003B ;*/
+}
+.container{
+    width: 450px;
+    background-color: #413F42 ;
+    border-radius: 10px;
+}
+.container h2{
+    font-weight: 600px;
+    font-size: 1.31 rem;
+    padding: 1rem 1.175rem;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: #21E6C1;
+    border-bottom: 1px solid white;
+
+}
+.wrapper{
+    margin: 1.25rem 1.75rem;
+    color: #A3FFD6;
+}
+.wrapper .inputbox{
+    position: relative;
+}
+.inputbox input{
+    
+    width: 100%;
+    height: 33px;
+    border: 1px solid rgb(102, 100, 100);
+    border-radius: 4px;
+    letter-spacing: 1.4px;
+    
+}
+.inputbox span{
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    bottom: 8px;
+    color: rgb(3, 0, 28);
+}
+
+.wrapper .passindicator{
+
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+    background-color: grey;
+    
+}
+.passindicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+.passindicator#weak::before{
+    width: 20%;
+    background-color: #97FEED;
+}
+
+.passindicator#medium::before{
+    width: 50%;
+    background-color: #35A29F;
+}
+.passindicator#strong::before{
+    width: 100%;
+    background-color: #386566;
+}
+
+.wrapper .passlength{
+    margin: 1.56rem 0 1.25rem;;
+}
+.passlen  .details{
+    display: flex;
+    justify-content: space-between;
+}
+.passlen input{
+    width: 100%;
+    height: 5px;
+    
+}
+.passwordsettings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    
+}
+
+.passwordsettings .options .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width:calc(100%/2);
+
+}
+.options .option:first-child{
+   pointer-events:none;
+}
+.options .option:first-child input{
+   opacity:0.7;
+}
+.options .option input{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+.options .option label{
+    cursor: pointer;
+    padding-left: 0.13rem;
+}
+.wrapper .generate{
+    width: 100%;
+    font-size: 1.06rem;
+    padding: 0.94rem 0;
+    border-radius: 5px;
+    margin: 0.94rem  0 1.3rem;
+    background-color: #00224D;
+    color: #A3FFD6;
+    text-transform: uppercase;
+    
+}
